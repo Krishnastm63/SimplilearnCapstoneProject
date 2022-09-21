@@ -24,7 +24,7 @@
                             </a>
                         </div>
                         <div class="card-body" style="margin-top: -23px;"  >
-                            <div class="price card-text">{{ tempProduct.price | currency:'USD' }}</div>
+                            <div class="price card-text">{{ tempProduct.price | currency:'INR' }}</div>
                             <button *ngIf="username != 'admin'" (click)="addToCart(tempProduct)"
                                 class="btn btn-primary btn-sm">Add to cart</button>
                                 
@@ -84,7 +84,7 @@
                                 <select (change)="updatePageSize($event.target.value)">
                                     <option>2</option>
                                     <option selected="true">5</option>
-                                    <option>10</option>
+                                    <option>8</option>
                                     <option>20</option>
                                     <option>50</option>
                                 </select>
